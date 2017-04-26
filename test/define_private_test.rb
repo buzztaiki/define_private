@@ -24,4 +24,16 @@ class DefinePrivateTest < Minitest::Test
     assert klass.private_method_defined?(:xxx)
     assert_equal 3, klass.new.send(:xxx, 1, 2)
   end
+
+  def test_defp
+    klass = Class.new do
+      include DefinePrivate
+
+      defp :xxx do
+        100
+      end
+    end
+    assert klass.private_method_defined?(:xxx)
+    assert_equal 100, klass.new.send(:xxx)
+  end
 end

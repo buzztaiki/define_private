@@ -6,6 +6,7 @@ module DefinePrivate
       define_method(name, block)
       private name
     end
+    alias defp define_private
   end
 
   def self.included(klass)
