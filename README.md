@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/buzztaiki/define_private.svg?branch=master)](https://travis-ci.org/buzztaiki/define_private)
+
 # define_private
 
 define_private is a ruby library that provides an alternative private method definition syntax like Elixir.
