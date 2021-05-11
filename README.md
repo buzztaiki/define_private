@@ -1,4 +1,4 @@
-![Build Status](https://github.com/buzztaiki/define_private/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/buzztaiki/define_private/actions/workflows/build.yml/badge.svg)
 
 # define_private
 
