@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/buzztaiki/define_private.svg?branch=master)](https://travis-ci.org/buzztaiki/define_private)
+![Build Status](https://github.com/buzztaiki/define_private/actions/workflows/ci.yml/badge.svg)
 
 # define_private
 
