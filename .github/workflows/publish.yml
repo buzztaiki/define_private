@@ -1,0 +1,24 @@
+name: publish
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: "2.6"
+    - name: Install dependencies
+      run: bundle install
+    - name: Setup credential
+      run: bundle exec rake release
+      env:
+        GEM_HOST_API_KEY: "${{secrets.GEM_HOST_API_KEY}}"
